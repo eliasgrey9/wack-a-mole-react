@@ -1,38 +1,71 @@
 .App {
+  height: 99vmin;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.column {
+  margin: 5vmin;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  height: 30vmin;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  height: 10vmin;
+  width: 10vmin;
+  border: solid black 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.startStopBtn {
+  font-size: 6vmin;
+  height: 10vmin;
+  width: 55vmin;
+  margin: 1vmin;
+}
+
+.mole {
+  background-image: url("https://www.pngkey.com/png/full/102-1024269_mole-hole-cartoon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hole {
+  background-image: url("https://cdn.wallpapersafari.com/18/59/pHxyrb.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10vmin;
+  width: 10vmin;
+  border: solid black 4px;
+}
+
+.points {
+  margin: 2vmin;
+  padding: 1vmin;
+  border: dotted green 3px;
+  font-size: 4vmin;
+}
+
+.countdown {
+  font-size: 4vmin;
+  margin-bottom: 1.25vmin;
+}
+
+.results {
+  font-size: 3vmin;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
 }
